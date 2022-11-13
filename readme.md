@@ -17,7 +17,7 @@
   <li>📗 Here is my <a href="https://cafedx.com/product/stackoverflow-the-right-way-the-complete-guide-practical-reference" target="_blank"> StackOverflow the RightWay</a> course
   </li>
   
-  <li>📺 Here is my Youtube Channel <a href="https://www.linkedin.com/in/seyyedkhandon" target="_blank">CafeDX</a>
+  <li>📺 Here is my Youtube Channel <a href="https://www.youtube.com/c/cafedx_com" target="_blank">CafeDX</a>
   </li>
   
   <li>📫 Email: <a href="mailto:seyyedkhandon@gmail.com" target="_blank">seyyedkhandon@gmail.com</a>
