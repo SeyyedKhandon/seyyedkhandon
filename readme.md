@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm SeyyedMahdi Hassanpour</h1>
 
-<h3 align="center">A passionate frontend developer 🤩😎</h3>
+<h3 align="center">A passionate software engineer 🤩😎</h3>
 
 <ul>
   <li>🌱 I'm always <strong>learning & Teaching</strong></li>
