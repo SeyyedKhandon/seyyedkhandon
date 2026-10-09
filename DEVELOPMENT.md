@@ -11,6 +11,8 @@ TypeScript and plain CSS, built with [Vite](https://vite.dev). No framework, no 
 | `npm run typecheck` | Check the types |
 | `npm run build` | Type-check and build the site into `dist/` |
 | `npm run preview` | Serve the built `dist/` locally |
+| `npm run readme` | Regenerate the profile README panels in `profile/` |
+| `npm run readme:live` | Refetch the GitHub numbers for the activity panel (needs `GITHUB_TOKEN`) |
 
 ## Project structure
 
@@ -29,6 +31,9 @@ src/
     switcher.ts       Builds the theme switch in the header
     prePaint.ts       Tiny head script so the first paint is already themed
   features/           Scroll effects: reveal.ts, scrollSpy.ts
+scripts/readme/       Generates the profile README panels (see below)
+profile/              The generated panels, light and dark (SVG)
+.github/workflows/    Daily refresh of the activity panel
 vite.config.ts        Inlines the theme CSS into the page head at build time
 ```
 
@@ -44,6 +49,16 @@ To add a theme:
 The theme switch and the CSS pick it up from there. "Auto" follows the device and maps to the themes listed in `systemThemes`.
 
 To add a colour, add it to `Palette` and to every palette file, then use it as `var(--your-colour)` (camelCase becomes kebab-case, `surface2` becomes `--surface-2`).
+
+## Profile README
+
+GitHub strips CSS and scripts from a README, but not from an SVG shown as an image. Each section of `readme.md` is an SVG panel: HTML and CSS inside `<foreignObject>`, with the font and images embedded, written once per theme so `<picture>` can match GitHub's light or dark mode. The panels reuse the palettes in `src/theme/palettes/`.
+
+- `scripts/readme/content.ts` holds the text and numbers. Keep it in step with `index.html`.
+- `scripts/readme/panels/` has one file per panel; `svg.ts` has the shared styles and the wrapper.
+- `npm run readme` rewrites the static panels. `npm run readme:live` fetches the activity panel's numbers; run it locally with `GITHUB_TOKEN=$(gh auth token) npm run readme:live`.
+- `.github/workflows/profile.yml` runs `readme:live` every day and commits the refreshed panel.
+- Links can't live inside an SVG image, so each panel has a row of plain links under it in `readme.md`.
 
 ## Updating the content
 
