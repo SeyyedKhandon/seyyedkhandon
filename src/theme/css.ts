@@ -3,7 +3,7 @@ import type { Theme } from './types.ts';
 
 const toVarName = (key: string) => `--${key.replace(/[A-Z0-9]/g, (c) => `-${c.toLowerCase()}`)}`;
 
-const declarations = ({ palette, scheme }: Theme) =>
+export const declarations = ({ palette, scheme }: Theme) =>
   [...Object.entries(palette).map(([key, value]) => `${toVarName(key)}: ${value};`), `color-scheme: ${scheme};`].join(' ');
 
 /**

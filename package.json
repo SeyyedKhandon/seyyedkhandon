@@ -8,9 +8,12 @@
     "dev": "vite",
     "typecheck": "tsc",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "readme": "node scripts/readme/build.ts",
+    "readme:live": "node scripts/readme/live.ts"
   },
   "devDependencies": {
+    "@types/node": "^26.6.4",
     "typescript": "^7.0.2",
     "vite": "^8.3.4"
   }
