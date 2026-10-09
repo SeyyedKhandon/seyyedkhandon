@@ -21,7 +21,7 @@
 
 <p align="center">
   <picture><source media="(prefers-color-scheme: dark)" srcset="profile/chrome-head-dark.svg" /><img src="profile/chrome-head-light.svg" alt="Chrome extensions: small helpers for everyday browsing." width="100%" /></picture>
-  <a href="https://chromewebstore.google.com/detail/price-history-for-amazon/fdebpchoageihbdifaiallkcipeooaoo"><picture><source media="(prefers-color-scheme: dark)" srcset="profile/chrome-0-dark.svg" /><img src="profile/chrome-0-light.svg" alt="Price History for Amazon, Chrome extension · JavaScript · MIT. Open any Amazon product’s price history on CamelCamelCamel or Keepa in one click." width="49%" /></picture></a>
+  <a href="https://chromewebstore.google.com/detail/toolbox-for-amazon/fdebpchoageihbdifaiallkcipeooaoo"><picture><source media="(prefers-color-scheme: dark)" srcset="profile/chrome-0-dark.svg" /><img src="profile/chrome-0-light.svg" alt="Toolbox for Amazon, Chrome extension · JavaScript · MIT. Open any Amazon product’s price history on CamelCamelCamel or Keepa in one click." width="49%" /></picture></a>
   <a href="https://chromewebstore.google.com/detail/account-switcher-for-redd/dblhkalklfebjmlfmbdgacigmejcjggm"><picture><source media="(prefers-color-scheme: dark)" srcset="profile/chrome-1-dark.svg" /><img src="profile/chrome-1-light.svg" alt="Account Switcher for Reddit, Chrome extension · TypeScript · MIT. The mobile app’s account switching, right in reddit.com’s profile menu. No tracking." width="49%" /></picture></a>
 </p>
 
@@ -29,6 +29,7 @@
   <picture><source media="(prefers-color-scheme: dark)" srcset="profile/tools-head-dark.svg" /><img src="profile/tools-head-light.svg" alt="Other tools: open-source experiments in networking and blockchain." width="100%" /></picture>
   <a href="https://github.com/SeyyedKhandon/bitcoin-js-solo-miner"><picture><source media="(prefers-color-scheme: dark)" srcset="profile/tool-0-dark.svg" /><img src="profile/tool-0-light.svg" alt="Bitcoin JS Solo Miner, Node.js and browser · JavaScript · MIT. A working Stratum V1 miner for server CPUs, browser workers or WebGPU, with a live dashboard." width="49%" /></picture></a>
   <a href="https://github.com/SeyyedKhandon/bavin"><picture><source media="(prefers-color-scheme: dark)" srcset="profile/tool-1-dark.svg" /><img src="profile/tool-1-light.svg" alt="Bavin, Desktop app · C# · GPL-2.0. A real-time packet analyzer that shows traffic as a stacked TCP/IP protocol view." width="49%" /></picture></a>
+  <a href="https://www.softpedia.com/publisher/Seyed-MAhdi-HassanPour-MatiKolaei-85894.html"><picture><source media="(prefers-color-scheme: dark)" srcset="profile/softpedia-dark.svg" /><img src="profile/softpedia-light.svg" alt="Older Windows utilities and experiments are on Softpedia." width="100%" /></picture></a>
 </p>
 
 <p align="center">

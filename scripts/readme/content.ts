@@ -30,8 +30,8 @@ export interface Product {
 
 export const chromeExtensions: Product[] = [
   {
-    name: 'Price History for Amazon',
-    url: 'https://chromewebstore.google.com/detail/price-history-for-amazon/fdebpchoageihbdifaiallkcipeooaoo',
+    name: 'Toolbox for Amazon',
+    url: 'https://chromewebstore.google.com/detail/toolbox-for-amazon/fdebpchoageihbdifaiallkcipeooaoo',
     meta: 'Chrome extension · JavaScript · MIT',
     text: 'Open any Amazon product’s price history on CamelCamelCamel or Keepa in one click.',
     image: 'amazon-promo.jpg',
@@ -140,6 +140,7 @@ export const topics: Topic[] = [
   },
 ];
 
+export const softpediaUrl = 'https://www.softpedia.com/publisher/Seyed-MAhdi-HassanPour-MatiKolaei-85894.html';
 export const profileUrl = 'https://github.com/SeyyedKhandon';
 export const marketplaceUrl = 'https://marketplace.visualstudio.com/publishers/SeyyedKhandon';
 export const mentoringUrl = 'https://adplist.org/mentors/seyyed-mahdi-hassanpour';

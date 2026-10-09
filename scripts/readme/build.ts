@@ -1,10 +1,10 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { linkedinUrl, marketplaceUrl, mentoringUrl, packs, profileUrl, chromeExtensions, otherTools, learn } from './content.ts';
+import { softpediaUrl, linkedinUrl, marketplaceUrl, mentoringUrl, packs, profileUrl, chromeExtensions, otherTools, learn } from './content.ts';
 import { contact } from './panels/contact.ts';
 import { hero } from './panels/hero.ts';
 import { learnHeading, learnTiles, mentor } from './panels/learn.ts';
 import { packRows, packsHeading } from './panels/packs.ts';
-import { chromeHeading, chromeTiles, toolsHeading, toolTiles } from './panels/products.ts';
+import { chromeHeading, chromeTiles, softpedia, toolsHeading, toolTiles } from './panels/products.ts';
 import { work } from './panels/work.ts';
 import { esc, panelThemes, renderPanel, type Panel } from './svg.ts';
 
@@ -26,7 +26,7 @@ interface Tile {
   href?: string;
 }
 
-const panels: Panel[] = [hero, packsHeading, ...packRows, chromeHeading, ...chromeTiles, toolsHeading, ...toolTiles, learnHeading, ...learnTiles, mentor, work, contact];
+const panels: Panel[] = [hero, packsHeading, ...packRows, chromeHeading, ...chromeTiles, toolsHeading, ...toolTiles, softpedia, learnHeading, ...learnTiles, mentor, work, contact];
 
 const tile = ({ name, title }: Panel, width: string, href?: string): Tile => ({ name, alt: title, width, href });
 const full = (panel: Panel, href?: string) => tile(panel, '100%', href);
@@ -37,7 +37,7 @@ const sections: Tile[][] = [
   [{ name: 'stats', alt: 'GitHub: public repositories, stars and followers.', width: '100%', href: profileUrl }],
   [full(packsHeading, marketplaceUrl), ...packRows.map((panel, i) => full(panel, packs[i].url))],
   [full(chromeHeading), ...chromeTiles.map((panel, i) => tile(panel, '49%', chromeExtensions[i].url))],
-  [full(toolsHeading), ...toolTiles.map((panel, i) => tile(panel, '49%', otherTools[i].url))],
+  [full(toolsHeading), ...toolTiles.map((panel, i) => tile(panel, '49%', otherTools[i].url)), full(softpedia, softpediaUrl)],
   [full(learnHeading), ...learnTiles.map((panel, i) => tile(panel, '32%', learn[i].url)), full(mentor, mentoringUrl)],
   [full(work, linkedinUrl)],
   [full(contact)],

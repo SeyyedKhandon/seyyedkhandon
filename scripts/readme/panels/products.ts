@@ -46,3 +46,11 @@ const tile = (p: Product, name: string, i: number): Panel => ({
 
 export const chromeTiles = chromeExtensions.map((p, i) => tile(p, `chrome-${i}`, i));
 export const toolTiles = otherTools.map((p, i) => tile(p, `tool-${i}`, i));
+
+export const softpedia: Panel = {
+  name: 'softpedia',
+  title: 'Older Windows utilities and experiments are on Softpedia.',
+  height: 36,
+  body: () =>
+    `<style>.line { padding-top: 6px; font-weight: 600; color: var(--muted); } .line b { color: var(--link); }</style><p class="line">Older Windows utilities and experiments are on <b>Softpedia &#8594;</b></p>`,
+};
