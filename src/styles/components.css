@@ -1,0 +1,23 @@
+/* Shared pieces: buttons, the theme switch and the colour tones. */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: none; border-radius: 999px; text-decoration: none; cursor: pointer;
+  background: var(--surface-2); color: var(--text); padding: 10px 20px; font: inherit; font-weight: 600; transition: background 140ms, transform 80ms; white-space: nowrap;
+}
+.btn:hover { background: var(--border); }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--accent); color: var(--on-accent); }
+.btn-primary:hover { background: var(--accent-hover); }
+.btn-ghost { background: none; color: var(--muted); padding-inline: 12px; }
+.btn-ghost:hover { background: var(--surface-2); color: var(--text); }
+.btn-lg { padding: 14px 28px; font-size: 16px; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 12px; }
+
+.segmented { display: inline-flex; gap: 2px; padding: 4px; border-radius: 999px; background: var(--surface-2); }
+.segmented button { border: none; background: none; color: var(--muted); border-radius: 999px; padding: 6px 12px; cursor: pointer; font: inherit; font-weight: 500; font-size: 13px; white-space: nowrap; }
+.segmented button:hover { color: var(--text); }
+.segmented button[aria-pressed="true"] { background: var(--control-active); color: var(--text); font-weight: 600; box-shadow: var(--control-shadow); }
+
+.blue { background: var(--blue-bg); color: var(--blue); }
+.green { background: var(--green-bg); color: var(--green); }
+.purple { background: var(--purple-bg); color: var(--purple); }
+.red { background: var(--red-bg); color: var(--red); }

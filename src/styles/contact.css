@@ -1,0 +1,12 @@
+/* ---- contact ---- */
+.final { padding-top: 24px; }
+.final-card { text-align: center; padding: clamp(36px, 6vw, 72px) 24px; border-radius: 32px; background: var(--surface); border: 1px solid var(--border); box-shadow: var(--shadow); }
+.final-card h2 { margin-inline: auto; }
+.final-card .sub { margin-inline: auto; }
+.links { list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 22px; }
+.links a { color: var(--muted); text-decoration: none; font-weight: 500; }
+.links a:hover { color: var(--text); text-decoration: underline; }
+.footer { padding: 34px 0 48px; border-top: 1px solid var(--border); }
+.foot-inner { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.brand-name { font-weight: 700; letter-spacing: -0.01em; }
+.version { font-size: 12.5px; color: var(--muted); }

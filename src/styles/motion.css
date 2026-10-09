@@ -1,0 +1,7 @@
+/* ---- appearing on scroll (only when JS is on; reduced motion shows everything at once) ---- */
+.js .reveal { opacity: 0; transform: translateY(14px); transition: opacity 520ms ease, transform 520ms ease; }
+.js .reveal.in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal, .js .reveal .bar::after { opacity: 1; transform: none; transition: none; }
+}

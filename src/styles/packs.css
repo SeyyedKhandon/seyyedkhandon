@@ -1,0 +1,17 @@
+/* ---- VS Code packs ---- */
+.packs { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.pack { display: grid; grid-template-columns: 52px minmax(0, 1.3fr) minmax(0, 1fr) auto; align-items: center; gap: 18px; padding: 14px 18px; background: var(--bg); border: 1px solid var(--border); border-radius: 20px; }
+.pack-img { width: 52px; height: 52px; border-radius: 14px; object-fit: cover; display: block; }
+.pack-img.letter { display: grid; place-items: center; font-weight: 800; font-size: 22px; }
+.pack-main h3 { margin: 0; font-size: 17px; }
+.pack-main p { margin: 0; color: var(--muted); font-size: 14.5px; }
+.pack-bar { display: grid; gap: 6px; }
+.count { font-weight: 800; font-size: 20px; letter-spacing: -0.02em; line-height: 1; }
+.bar { display: block; height: 8px; border-radius: 8px; background: var(--surface-2); position: relative; overflow: hidden; }
+.bar::after { content: ""; position: absolute; inset: 0 auto 0 0; width: var(--w); min-width: 6px; border-radius: 8px; background: linear-gradient(90deg, var(--blue), var(--green)); transform-origin: left; }
+.js .reveal .bar::after { transform: scaleX(0); transition: transform 900ms cubic-bezier(.2,.7,.2,1) 150ms; }
+.js .reveal.in .bar::after { transform: none; }
+.pack-links { display: flex; gap: 6px; }
+.more { margin: 22px 0 0; font-weight: 600; }
+.more a { text-decoration: none; color: var(--link); }
+.more a:hover { text-decoration: underline; }

@@ -1,0 +1,27 @@
+/* ---- hero ---- */
+.hero { position: relative; padding: 72px 0 64px; overflow: hidden; }
+.hero::before, .hero::after { content: ""; position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.55; pointer-events: none; z-index: 0; }
+.hero::before { width: 520px; height: 520px; left: -140px; top: -160px; background: radial-gradient(circle, var(--blue-bg), transparent 70%); }
+.hero::after { width: 560px; height: 560px; right: -160px; top: 40px; background: radial-gradient(circle, var(--green-bg), transparent 70%); }
+.hero-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); gap: 48px; align-items: center; }
+.pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 999px; background: var(--ok-bg); color: var(--ok); font-size: 13px; font-weight: 600; }
+h1 { font-size: clamp(36px, 4.7vw, 58px); line-height: 1.03; letter-spacing: -0.035em; margin: 18px 0 18px; font-weight: 800; }
+.grad { background: linear-gradient(100deg, var(--blue), var(--green) 60%, var(--purple)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.lead { font-size: clamp(17px, 2vw, 20px); color: var(--muted); max-width: 54ch; margin: 0 0 26px; }
+.lead em { color: var(--text); font-style: normal; font-weight: 600; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.hero-actions.center { justify-content: center; }
+.stats { display: grid; grid-template-columns: repeat(4, auto); justify-content: start; gap: 8px 36px; margin: 36px 0 0; }
+.stats div { display: grid; }
+.stats dt { font-size: 30px; font-weight: 800; letter-spacing: -0.03em; line-height: 1.1; order: 1; }
+.stats dd { margin: 0; color: var(--muted); font-size: 13.5px; order: 2; }
+
+.glance { padding: 22px; box-shadow: var(--shadow-pop); border-radius: 24px; }
+.glance-title { margin: 0 0 12px 6px; font-size: 13px; font-weight: 700; letter-spacing: 0.09em; text-transform: uppercase; color: var(--muted); }
+.glance-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.glance-list a { display: flex; align-items: center; gap: 14px; padding: 12px; border-radius: 16px; text-decoration: none; transition: background 140ms; }
+.glance-list a:hover { background: var(--surface-2); }
+.g-ico { width: 42px; height: 42px; border-radius: 13px; display: grid; place-items: center; font-weight: 800; flex: none; }
+.g-text { display: grid; flex: 1; min-width: 0; line-height: 1.35; }
+.g-text small { color: var(--muted); font-size: 13.5px; }
+.g-count { font-weight: 800; font-size: 20px; color: var(--muted); }

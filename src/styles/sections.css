@@ -1,0 +1,30 @@
+/* ---- sections ---- */
+.section { padding: 84px 0; }
+.section.alt { background: var(--surface); border-block: 1px solid var(--border); }
+.eyebrow { margin: 0 0 8px; color: var(--link); font-weight: 700; font-size: 13px; text-transform: uppercase; letter-spacing: 0.09em; }
+h2 { font-size: clamp(28px, 3.8vw, 44px); line-height: 1.1; letter-spacing: -0.03em; margin: 0 0 14px; font-weight: 800; max-width: 22ch; }
+h3 { margin: 0 0 4px; font-size: 19px; letter-spacing: -0.01em; }
+.sub { color: var(--muted); font-size: 18px; max-width: 60ch; margin: 0 0 32px; }
+.meta { margin: 0; color: var(--muted); font-size: 13.5px; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 22px; padding: 24px; box-shadow: var(--shadow); }
+.section.alt .card { background: var(--bg); box-shadow: none; }
+.actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; }
+
+.duo { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.product { display: flex; flex-direction: column; gap: 18px; padding: 0; overflow: hidden; }
+.shot { margin: 0; background: var(--surface-2); aspect-ratio: 16 / 10; overflow: hidden; border-bottom: 1px solid var(--border); }
+.shot img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.product-body { display: flex; flex-direction: column; gap: 12px; padding: 0 26px 26px; flex: 1; }
+.product-body p { margin: 0; }
+.product-head { display: flex; align-items: center; gap: 14px; }
+.app-icon { border-radius: 12px; flex: none; }
+
+/* the Chrome extension cards: a short picture and tighter text */
+.compact .shot { aspect-ratio: auto; height: 170px; }
+.compact .shot img { object-position: top; }
+.compact .product { gap: 14px; }
+.compact .product-body { gap: 10px; padding: 0 22px 20px; }
+.compact .product-body p { font-size: 15px; line-height: 1.5; }
+.compact .btn { padding: 8px 16px; font-size: 14.5px; }
+.compact .btn-ghost { padding-inline: 10px; }
+

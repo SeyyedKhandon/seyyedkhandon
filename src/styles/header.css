@@ -1,0 +1,9 @@
+/* ---- navigation ---- */
+.nav { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(1.4) blur(14px); -webkit-backdrop-filter: saturate(1.4) blur(14px); background: color-mix(in srgb, var(--bg) 82%, transparent); border-bottom: 1px solid var(--border); }
+.nav-inner { display: flex; align-items: center; gap: 12px; height: 66px; }
+.brand { white-space: nowrap; display: inline-flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; letter-spacing: -0.01em; }
+.logo { display: inline-flex; flex: none; width: 34px; line-height: 0; color: var(--text); }
+.logo.big { width: 72px; margin: 0 auto 14px; }
+.nav-links { display: flex; gap: 2px; margin-left: 6px; flex: 1; }
+.nav-links a { white-space: nowrap; text-decoration: none; color: var(--muted); padding: 8px 8px; border-radius: 999px; font-weight: 500; font-size: 14px; }
+.nav-links a:hover, .nav-links a.current { color: var(--text); background: var(--surface-2); }
