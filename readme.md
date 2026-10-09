@@ -1,62 +1,55 @@
-<h1 align="center">Hi 👋, I'm SeyyedMahdi Hassanpour</h1>
+<h1 align="center">Hi 👋, I'm Seyyed Mahdi Hassanpour</h1>
 
-<h3 align="center">A passionate software engineer 🤩😎</h3>
-
-<ul>
-  <li>🌱 I'm always <strong>learning & Teaching</strong></li>
-  <li>🛡️ Using <strong>information security</strong> knowledge in coding </li>
- 
-  <li>🪄 A huge fan of auto code auditing, formatting, conventions etc... </li>
- 
-  <li>📝 See my <a href="https://marketplace.visualstudio.com/publishers/SeyyedKhandon" target="_blank">7 VScode Extensions for Better DX</a><small><sup>developer experience</sup></small>
-  </li>
-
-  <li>📓 Here is my <a href="https://www.youtube.com/watch?v=vu0vXQP_7m4&list=PLCkxtOXwj7xfBWp29Yq6UA_IB6zxuZhGm" target="_blank"> Webpack4 the RightWay</a>  Course on youtube
-  </li>
-  
-  <li>📗 Here is my <a href="https://cafedx.com/product/stackoverflow-the-right-way-the-complete-guide-practical-reference" target="_blank"> StackOverflow the RightWay</a> course
-  </li>
-  
-  <li>📺 Here is my Youtube Channel <a href="https://www.youtube.com/c/cafedx_com" target="_blank">CafeDX</a>
-  </li>
-  
-  <li>📫 Email: <a href="mailto:seyyedkhandon@gmail.com" target="_blank">seyyedkhandon@gmail.com</a>
-</ul>
-
-<h3 align="left">Connect with me:</h3>
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/seyyedkhandon" target="_blank"><img align="center" alt="Linkedin" height="35" width="45" src="assets/Linkedin.svg" /></a>
-  <a href="https://stackoverflow.com/users/12666332/seyyedkhandon?tab=profile" target="_blank"><img align="center" alt="Stack Overflow" height="35" width="45" src="assets/StackOverflow.svg" /></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-
-<p align="left">
-  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noreferrer"><img align="center" alt="HTML" height="35" width="45" src="assets/HTML.svg" /></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"><img align="center" alt="CSS" height="35" width="45" src="assets/CSS.svg" /></a>
-  <a href="https://sass-lang.com" target="_blank" rel="noreferrer"><img align="center" alt="Sass" height="35" width="45" src="assets/Sass.svg" /></a>
-  <a href="https://javascript.com" target="_blank" rel="noreferrer"><img align="center" alt="JavaScript" height="35" width="45" src="assets/JavaScript.svg" /></a>
-  <a href="https://typescriptlang.org" target="_blank" rel="noreferrer"><img align="center" alt="TypeScript" height="35" width="45" src="assets/TypeScript.svg" /></a>
-  <a href="https://reactjs.org" target="_blank" rel="noreferrer"><img align="center" alt="React" height="35" width="45" src="assets/React.svg" /></a>
-  <a href="https://redux.js.org" target="_blank" rel="noreferrer"><img align="center" alt="Redux" height="35" width="45" src="assets/Redux.svg" /></a>
-  <a href="https://axios-http.com" target="_blank" rel="noreferrer"><img align="center" alt="REST API" height="35" width="35" src="assets/REST-API.png" /></a>
-  <a href="https://react-query.tanstack.com" target="_blank" rel="noreferrer"><img align="center" alt="React Query" height="35" width="45" src="assets/React-Query.svg" /></a>
-  <a href="https://webpack.js.org" target="_blank" rel="noreferrer"><img align="center" alt="Webpack" height="35" width="45" src="assets/Webpack.svg" /></a>
-  <a href="https://storybook.js.org" target="_blank" rel="noreferrer"><img align="center" alt="Storybook" height="35" width="45" src="assets/Storybook.svg" /></a>
-  <a href="https://jestjs.io" target="_blank" rel="noreferrer"><img align="center" alt="Jest" height="35" width="45" src="assets/Jest.svg" /></a>
-  <a href="https://testing-library.com/docs/react-testing-library/intro" target="_blank" rel="noreferrer"><img align="center" alt="Testing Library" height="35" width="35" src="assets/Testing-Library.png" /></a>
-  <a href="https://sentry.io" target="_blank" rel="noreferrer"><img align="center" alt="Sentry" height="35" width="45" src="assets/Sentry.svg" /></a>
-  <a href="https://git-scm.com" target="_blank" rel="noreferrer"><img align="center" alt="Git" height="35" width="45" src="assets/Git.svg" /></a>
-
-</p>
-
-<h3 align="left">GitHub Stats:</h3>
+<p align="center"><b>Small tools people actually use.</b><br />Software engineer in Berlin, building since 2011.</p>
 
 <p align="center">
-  <img align="center" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=seyyedkhandon&show_icons=true&title_color=4596fb&text_color=37474f&bg_color=f5f5f5&icon_color=57f2cc&hide_border=true&border_radius=15&locale=en" />
+  <b>484K</b> VS Code installs · <b>9</b> extensions · <b>3</b> books &amp; courses · <b>10+</b> years building
 </p>
 
-<p align="center">
-  <img align="center" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs?username=seyyedkhandon&show_icons=true&title_color=4596fb&text_color=37474f&bg_color=f5f5f5&icon_color=57f2cc&hide_border=true&border_radius=15&locale=en&layout=compact" />
-</p>
+## Chrome extensions
+
+- **[Price History for Amazon](https://chromewebstore.google.com/detail/price-history-for-amazon/fdebpchoageihbdifaiallkcipeooaoo)**: open an Amazon product's price history on CamelCamelCamel or Keepa in one click. [Demo](https://www.youtube.com/watch?v=_BUUSi_Evqk) · [Source](https://github.com/SeyyedKhandon/amazon-price-history)
+- **[Account Switcher for Reddit](https://chromewebstore.google.com/detail/account-switcher-for-redd/dblhkalklfebjmlfmbdgacigmejcjggm)**: the mobile app's account switching, in reddit.com's profile menu. [Demo](https://www.youtube.com/watch?v=DZk6LELndAc) · [Source](https://github.com/SeyyedKhandon/reddit-multi-login)
+
+## VS Code extensions: seven, 484K installs
+
+| Extension | Installs | What it is |
+| --- | --: | --- |
+| [FiraCode](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode) ([source](https://github.com/SeyyedKhandon/firacode-vscode-extension)) | 284K | Programming-ligature font, zero-config |
+| [FPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.fpack) ([source](https://github.com/SeyyedKhandon/fpack)) | 47.5K | Frontend essentials |
+| [TPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.tpack) ([source](https://github.com/SeyyedKhandon/tpack)) | 46.6K | Theme, icon and font pack |
+| [GPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.gpack) ([source](https://github.com/SeyyedKhandon/gpack)) | 41.5K | Git essentials |
+| [QPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.qpack) ([source](https://github.com/SeyyedKhandon/qpack)) | 26K | Web quality and metrics |
+| [EPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.epack) ([source](https://github.com/SeyyedKhandon/epack)) | 20.9K | Developer-experience enhancers |
+| [ZPack](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.zpack) ([source](https://github.com/SeyyedKhandon/zpack)) | 17.3K | Pro pack for frontend developers |
+
+Install counts as of October 2026. [All on the Marketplace →](https://marketplace.visualstudio.com/publishers/SeyyedKhandon)
+
+## Books, tutorials & mentoring
+
+- **[Coach: Lead the Right Way](https://github.com/SeyyedKhandon/coach)**: a book on finding your path to team lead (Persian and English).
+- **[Stack Overflow The Right Way](https://seyyedkhandon.github.io/stackoverflow-the-right-way/)**: taking part in Stack Overflow, Reddit, GitHub and other communities. [Source](https://github.com/SeyyedKhandon/stackoverflow-the-right-way)
+- **[Webpack 4 the Right Way](https://www.youtube.com/watch?v=vu0vXQP_7m4&list=PLCkxtOXwj7xfBWp29Yq6UA_IB6zxuZhGm)**: a video course, from first config to production. More on the [CafeDX channel](https://www.youtube.com/c/cafedx_com).
+- **[Mentoring on ADPList](https://adplist.org/mentors/seyyed-mahdi-hassanpour)**: careers, teams and hard technical decisions.
+
+## Other tools
+
+- **[Bitcoin JS Solo Miner](https://github.com/SeyyedKhandon/bitcoin-js-solo-miner)**: a Stratum V1 miner in JavaScript for server CPUs, browser workers or WebGPU. [Live demo](https://bitcoin-js-solo-miner.onrender.com)
+- **[Bavin](https://github.com/SeyyedKhandon/bavin)**: a real-time packet analyzer showing traffic as a stacked TCP/IP view (C#).
+
+## Professional work
+
+Over ten years in web products. Dates, roles and details are on [LinkedIn](https://www.linkedin.com/in/seyyedkhandon).
+
+- **Financial trading web apps**: watchlists, screeners, order books and charts (TypeScript, Vue, Kotlin).
+- **Internal business tools**: 30+ API endpoints, 3x more load handled at peak (Node.js, Redis, Docker).
+- **Real-time messaging**: a PWA messenger for up to 100,000 users (React, XMPP, IndexedDB).
+- **Enterprise security and device management**: firewall and banking device apps (Vue, React, WebSocket).
+- **Developer experience and team leadership**: starter kit, 70%+ test coverage, mentoring 15+ developers.
+- **Imaging and industrial apps**: X-ray scanner front ends, a library for ~30 MB images (JavaScript, D3.js).
+
+## Contact
+
+📫 [seyyedkhandon.en@gmail.com](mailto:seyyedkhandon.en@gmail.com) · [LinkedIn](https://www.linkedin.com/in/seyyedkhandon) · [GitHub](https://github.com/SeyyedKhandon) · [Stack Overflow](https://stackoverflow.com/users/12666332/seyyedkhandon) · [YouTube](https://www.youtube.com/c/cafedx_com) · [ADPList](https://adplist.org/mentors/seyyed-mahdi-hassanpour)
+
+<sub>This repository also holds the source of my portfolio site, built with TypeScript and Vite. See [DEVELOPMENT.md](DEVELOPMENT.md).</sub>
