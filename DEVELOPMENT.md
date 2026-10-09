@@ -52,13 +52,14 @@ To add a colour, add it to `Palette` and to every palette file, then use it as `
 
 ## Profile README
 
-GitHub strips CSS and scripts from a README, but not from an SVG shown as an image. Each section of `readme.md` is an SVG panel: HTML and CSS inside `<foreignObject>`, with the font and images embedded, written once per theme so `<picture>` can match GitHub's light or dark mode. The panels reuse the palettes in `src/theme/palettes/`.
+GitHub strips CSS and scripts from a README, but not from an SVG shown as an image. `readme.md` is assembled from SVG tiles: HTML and CSS inside `<foreignObject>`, with the font and images embedded, written once per theme so `<picture>` can match GitHub's light or dark mode. The tiles reuse the palettes in `src/theme/palettes/`.
 
-- `scripts/readme/content.ts` holds the text and numbers. Keep it in step with `index.html`.
-- `scripts/readme/panels/` has one file per panel; `svg.ts` has the shared styles and the wrapper.
-- `npm run readme` rewrites the static panels. `npm run readme:live` fetches the activity panel's numbers; run it locally with `GITHUB_TOKEN=$(gh auth token) npm run readme:live`.
-- `.github/workflows/profile.yml` runs `readme:live` every day and commits the refreshed panel.
-- Links can't live inside an SVG image, so each panel has a row of plain links under it in `readme.md`.
+- `scripts/readme/content.ts` holds the text, numbers and link targets. Keep it in step with `index.html`.
+- `scripts/readme/panels/` has the tiles; `svg.ts` has the shared styles and the wrapper.
+- `npm run readme` rewrites the tiles in `profile/` and generates `readme.md`, so edit `scripts/readme/build.ts` rather than the README.
+- `npm run readme:live` fetches the numbers for the stats tile; run it locally with `GITHUB_TOKEN=$(gh auth token) npm run readme:live`.
+- `.github/workflows/profile.yml` runs `readme:live` every day and commits the refreshed stats.
+- A link can't live inside an SVG image, so every tile is its own image wrapped in a link in `readme.md`.
 
 ## Updating the content
 

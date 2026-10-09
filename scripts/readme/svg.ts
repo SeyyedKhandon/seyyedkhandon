@@ -10,11 +10,13 @@ export interface Panel {
   name: string;
   /** Used as the image description for screen readers. */
   title: string;
+  /** Pixels; defaults to the full README width. */
+  width?: number;
   height: number;
   body: () => string;
 }
 
-const WIDTH = 900;
+const FULL_WIDTH = 900;
 const root = new URL('../../', import.meta.url);
 
 const cache = new Map<string, string>();
@@ -39,9 +41,9 @@ export const image = (name: string, alt = '', position?: string): string => {
 export const esc = (text: string): string =>
   text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
-const styles = (theme: PanelTheme) => `
+const styles = (theme: PanelTheme, width: number) => `
 @font-face { font-family: 'Inter Variable'; font-weight: 100 900; src: url(${dataUri('public/assets/fonts/inter-latin-wght-normal.woff2', 'font/woff2')}) format('woff2-variations'); }
-.panel { box-sizing: border-box; ${declarations(themes[theme])} width: ${WIDTH}px; padding: 4px 6px; font: 14px/1.5 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; color: var(--text); }
+.panel { box-sizing: border-box; ${declarations(themes[theme])} width: ${width}px; padding: 4px 6px; font: 14px/1.5 'Inter Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif; color: var(--text); }
 .panel * { box-sizing: border-box; margin: 0; }
 .mono { font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace; }
 .muted, .meta { color: var(--muted); }
@@ -72,8 +74,9 @@ h3 { font-size: 16px; letter-spacing: -0.01em; font-weight: 700; }
 
 export function renderPanel(panel: Panel, theme: PanelTheme): string {
   const { height } = panel;
-  return `<svg xmlns="http://www.w3.org/2000/svg" width="${WIDTH}" height="${height}" viewBox="0 0 ${WIDTH} ${height}" role="img" aria-label="${esc(panel.title)}">
-<foreignObject width="${WIDTH}" height="${height}"><div xmlns="http://www.w3.org/1999/xhtml" class="panel"><style>${styles(theme)}</style>${panel.body()}</div></foreignObject>
+  const width = panel.width ?? FULL_WIDTH;
+  return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-label="${esc(panel.title)}">
+<foreignObject width="${width}" height="${height}"><div xmlns="http://www.w3.org/1999/xhtml" class="panel"><style>${styles(theme, width)}</style>${panel.body()}</div></foreignObject>
 </svg>
 `;
 }

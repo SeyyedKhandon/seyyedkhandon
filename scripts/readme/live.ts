@@ -1,15 +1,15 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
-import { activityPanel, type Activity } from './panels/activity.ts';
+import { statsPanel, type Stats } from './panels/stats.ts';
 import { panelThemes, renderPanel } from './svg.ts';
 
 /**
- * Fetches the numbers for the activity panel from GitHub and writes `profile/activity-<theme>.svg`.
+ * Fetches the numbers for the stats panel from GitHub and writes `profile/stats-<theme>.svg`.
  * Needs GITHUB_TOKEN; locally: GITHUB_TOKEN=$(gh auth token) npm run readme:live
  */
 const LOGIN = 'SeyyedKhandon';
 const token = process.env.GITHUB_TOKEN;
 if (!token) {
-  console.error('Set GITHUB_TOKEN to fetch the activity numbers.');
+  console.error('Set GITHUB_TOKEN to fetch the numbers for the stats panel.');
   process.exit(1);
 }
 
@@ -21,16 +21,8 @@ const query = `query($login: String!, $after: String) {
       pageInfo { hasNextPage endCursor }
       nodes { stargazerCount }
     }
-    contributionsCollection {
-      contributionCalendar {
-        totalContributions
-        weeks { contributionDays { contributionLevel } }
-      }
-    }
   }
 }`;
-
-const LEVELS: Record<string, number> = { NONE: 0, FIRST_QUARTILE: 1, SECOND_QUARTILE: 2, THIRD_QUARTILE: 3, FOURTH_QUARTILE: 4 };
 
 async function request(after: string | null) {
   const response = await fetch('https://api.github.com/graphql', {
@@ -53,22 +45,17 @@ for (;;) {
   user = { ...user, repositories: next.repositories };
 }
 
-const calendar = user.contributionsCollection.contributionCalendar;
-const activity: Activity = {
+const stats: Stats = {
   login: LOGIN,
   repos: user.repositories.totalCount,
   stars,
   followers: user.followers.totalCount,
-  contributions: calendar.totalContributions,
-  weeks: calendar.weeks.map((week: { contributionDays: { contributionLevel: string }[] }) =>
-    week.contributionDays.map((day) => LEVELS[day.contributionLevel] ?? 0),
-  ),
   updated: new Date().toISOString().slice(0, 10),
 };
 
 const out = new URL('../../profile/', import.meta.url);
 mkdirSync(out, { recursive: true });
 for (const theme of panelThemes) {
-  writeFileSync(new URL(`activity-${theme}.svg`, out), renderPanel(activityPanel(activity), theme));
+  writeFileSync(new URL(`stats-${theme}.svg`, out), renderPanel(statsPanel(stats), theme));
 }
-console.log(`Wrote the activity panels: ${activity.repos} repos, ${activity.stars} stars, ${activity.contributions} contributions.`);
+console.log(`Wrote the stats panels: ${stats.repos} repos, ${stats.stars} stars, ${stats.followers} followers.`);

@@ -8,17 +8,18 @@ export const stats = [
 ];
 
 export const packs = [
-  { name: 'FiraCode', text: 'Programming-ligature font, zero-config.', count: '284K', width: 100, image: 'firacode.jpg' },
-  { name: 'FPack', text: 'Frontend essentials.', count: '47.5K', width: 16.7, image: 'fpack-banner.jpg' },
-  { name: 'TPack', text: 'Theme, icon and font pack.', count: '46.6K', width: 16.4, image: 'tpack.jpg' },
-  { name: 'GPack', text: 'Git essentials.', count: '41.5K', width: 14.6, image: 'gpack.jpg' },
-  { name: 'QPack', text: 'Web quality and metrics.', count: '26K', width: 9.2, image: 'qpack.jpg' },
-  { name: 'EPack', text: 'Developer-experience enhancers.', count: '20.9K', width: 7.4, image: 'epack.jpg' },
-  { name: 'ZPack', text: 'Pro pack for frontend developers.', count: '17.3K', width: 6.1, image: 'zpack-banner.jpg' },
+  { name: 'FiraCode', url: 'https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode', text: 'Programming-ligature font, zero-config.', count: '284K', width: 100, image: 'firacode.jpg' },
+  { name: 'FPack', url: 'https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.fpack', text: 'Frontend essentials.', count: '47.5K', width: 16.7, image: 'fpack-banner.jpg' },
+  { name: 'TPack', url: 'https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.tpack', text: 'Theme, icon and font pack.', count: '46.6K', width: 16.4, image: 'tpack.jpg' },
+  { name: 'GPack', url: 'https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.gpack', text: 'Git essentials.', count: '41.5K', width: 14.6, image: 'gpack.jpg' },
+  { name: 'QPack', url: 'https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.qpack', text: 'Web quality and metrics.', count: '26K', width: 9.2, image: 'qpack.jpg' },
+  { name: 'EPack', url: 'https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.epack', text: 'Developer-experience enhancers.', count: '20.9K', width: 7.4, image: 'epack.jpg' },
+  { name: 'ZPack', url: 'https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.zpack', text: 'Pro pack for frontend developers.', count: '17.3K', width: 6.1, image: 'zpack-banner.jpg' },
 ];
 
 export interface Product {
   name: string;
+  url: string;
   meta: string;
   text: string;
   image: string;
@@ -30,6 +31,7 @@ export interface Product {
 export const chromeExtensions: Product[] = [
   {
     name: 'Price History for Amazon',
+    url: 'https://chromewebstore.google.com/detail/price-history-for-amazon/fdebpchoageihbdifaiallkcipeooaoo',
     meta: 'Chrome extension · JavaScript · MIT',
     text: 'Open any Amazon product’s price history on CamelCamelCamel or Keepa in one click.',
     image: 'amazon-promo.jpg',
@@ -37,10 +39,10 @@ export const chromeExtensions: Product[] = [
   },
   {
     name: 'Account Switcher for Reddit',
+    url: 'https://chromewebstore.google.com/detail/account-switcher-for-redd/dblhkalklfebjmlfmbdgacigmejcjggm',
     meta: 'Chrome extension · TypeScript · MIT',
     text: 'The mobile app’s account switching, right in reddit.com’s profile menu. No tracking.',
     image: 'reddit-promo.jpg',
-    position: 'center 25%',
     icon: 'reddit-icon.png',
   },
 ];
@@ -48,12 +50,14 @@ export const chromeExtensions: Product[] = [
 export const otherTools: Product[] = [
   {
     name: 'Bitcoin JS Solo Miner',
+    url: 'https://github.com/SeyyedKhandon/bitcoin-js-solo-miner',
     meta: 'Node.js and browser · JavaScript · MIT',
     text: 'A working Stratum V1 miner for server CPUs, browser workers or WebGPU, with a live dashboard.',
     image: 'miner-poster.jpg',
   },
   {
     name: 'Bavin',
+    url: 'https://github.com/SeyyedKhandon/bavin',
     meta: 'Desktop app · C# · GPL-2.0',
     text: 'A real-time packet analyzer that shows traffic as a stacked TCP/IP protocol view.',
     image: 'bavin-screen.jpg',
@@ -63,18 +67,21 @@ export const otherTools: Product[] = [
 export const learn = [
   {
     name: 'Coach: Lead the Right Way',
+    url: 'https://github.com/SeyyedKhandon/coach',
     meta: 'Book · Persian and English',
     text: 'Find your path to team lead: goals, resources and a plan.',
     image: 'coach-cover.jpg',
   },
   {
     name: 'Stack Overflow The Right Way',
+    url: 'https://seyyedkhandon.github.io/stackoverflow-the-right-way/',
     meta: 'Book and course',
     text: 'The missing manual for Stack Overflow, Reddit, GitHub and other communities.',
     image: 'so-cover.jpg',
   },
   {
     name: 'Webpack 4 the Right Way',
+    url: 'https://www.youtube.com/watch?v=vu0vXQP_7m4&list=PLCkxtOXwj7xfBWp29Yq6UA_IB6zxuZhGm',
     meta: 'Video course · YouTube',
     text: 'From your first config to a production setup, step by step.',
   },
@@ -132,5 +139,10 @@ export const topics: Topic[] = [
     tags: ['JavaScript', 'D3.js', 'Python'],
   },
 ];
+
+export const profileUrl = 'https://github.com/SeyyedKhandon';
+export const marketplaceUrl = 'https://marketplace.visualstudio.com/publishers/SeyyedKhandon';
+export const mentoringUrl = 'https://adplist.org/mentors/seyyed-mahdi-hassanpour';
+export const linkedinUrl = 'https://www.linkedin.com/in/seyyedkhandon';
 
 export const handles = ['linkedin', 'github', 'stackoverflow', 'youtube', 'marketplace', 'adplist'];

@@ -13,7 +13,7 @@ const logo = asciiLogo
 
 export const hero: Panel = {
   name: 'hero',
-  title: 'Seyyed Mahdi Hassanpour: small tools people actually use. Software engineer in Berlin, building since 2011.',
+  title: 'Seyyed Mahdi Hassanpour: practical tools people actually use. Software engineer in Berlin, building since 2011.',
   height: 270,
   body: () => `
 <style>
@@ -29,7 +29,7 @@ h1 { font-size: 50px; line-height: 1.03; letter-spacing: -0.035em; font-weight: 
 <div class="hero">
   <div>
     <p class="prompt mono rise"><b>seyyed@berlin</b> ~ $ whoami</p>
-    <h1 class="rise" style="--i:1">Small tools<br/><span class="grad">people actually use.</span></h1>
+    <h1 class="rise" style="--i:1">Practical tools<br/><span class="grad">people actually use.</span></h1>
     <p class="type mono">${LEAD}</p>
     <div class="stats">${stats.map((s, i) => `<div class="rise" style="--i:${i + 6}"><b>${s.value}</b><span>${s.label.replace('&', '&amp;')}</span></div>`).join('')}</div>
   </div>
