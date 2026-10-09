@@ -13,6 +13,22 @@ function inlineTheme(): Plugin {
   };
 }
 
+/**
+ * Lets dist/index.html open straight from disk (file://): browsers refuse module scripts and
+ * CORS-flagged stylesheets there, so the build uses a plain deferred script and no crossorigin.
+ */
+function openFromDisk(): Plugin {
+  return {
+    name: 'open-from-disk',
+    apply: 'build',
+    transformIndexHtml: {
+      order: 'post',
+      handler: (html) => html.replace('<script type="module" crossorigin', '<script defer').replace('<link rel="stylesheet" crossorigin', '<link rel="stylesheet"'),
+    },
+  };
+}
+
 export default defineConfig({
-  plugins: [inlineTheme()],
+  base: './',
+  plugins: [inlineTheme(), openFromDisk()],
 });

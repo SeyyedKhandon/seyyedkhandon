@@ -67,7 +67,7 @@ The text, links and VS Code install counts are written in `index.html`. The `--w
 
 ## Deploying
 
-`netlify.toml` tells Netlify to run `npm run build` and publish `dist/`. The built site is also committed in `dist/`, so it can be uploaded to any static host as-is. Run `npm run build` and commit `dist/` after changing the site.
+`netlify.toml` tells Netlify to run `npm run build` and publish `dist/`. The built site is also committed in `dist/`, so it can be uploaded to any static host as-is, or opened straight from disk by double-clicking `dist/index.html` (the build uses relative paths and a plain deferred script for that). Run `npm run build` and commit `dist/` after changing the site.
 
 ## Credits
 
